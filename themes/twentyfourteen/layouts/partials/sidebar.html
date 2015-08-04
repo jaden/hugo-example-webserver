@@ -1,6 +1,6 @@
 <div id="secondary">
 
-	{{ if isset .Site.Params "Description" }} 
+	{{ if isset .Site.Params "Description" }}
 		{{ with .Site.Params.Description }}<h2 class="site-description">{{ . }}</h2>{{ end }}
 	{{ end }}
 
@@ -11,6 +11,8 @@
 		{{ partial "recentposts.html" . }}
 
 		{{ partial "categories.html" . }}
+
+        {{ partial "gists.html" . }}
 
 	</div>
 
